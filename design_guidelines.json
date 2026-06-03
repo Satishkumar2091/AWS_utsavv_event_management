@@ -1,0 +1,131 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "emotional_tone": "Warm, Celebratory, Premium, and Trustworthy",
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "body_font": "Satoshi",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-none font-semibold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "body": "text-base leading-relaxed",
+      "small_labels": "text-xs sm:text-sm tracking-[0.2em] uppercase"
+    },
+    "font_weights": {
+      "headings": "font-bold",
+      "subheadings": "font-medium",
+      "body": "font-normal",
+      "accent": "font-light"
+    }
+  },
+  "colors": {
+    "background": {
+      "main": "#FDFBF7",
+      "secondary": "#F3EFE9",
+      "surface": "#FFFFFF",
+      "glass": "bg-[#FDFBF7]/70"
+    },
+    "text": {
+      "primary": "#1A251F",
+      "secondary": "#4A5650",
+      "muted": "#8A948E"
+    },
+    "primary": {
+      "default": "#C85A4F",
+      "hover": "#D86B60",
+      "text_on_primary": "#FFFFFF"
+    },
+    "secondary": {
+      "default": "#2A4736",
+      "hover": "#365945",
+      "text_on_secondary": "#FFFFFF"
+    },
+    "borders": {
+      "default": "border-[#2A4736]/10",
+      "strong": "border-[#2A4736]/30",
+      "glass": "border-[#2A4736]/5"
+    }
+  },
+  "layout_spacing": {
+    "grid": {
+      "marketing": "grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12",
+      "dashboard": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "bento_items": {
+        "hero": "col-span-full md:col-span-8 row-span-2",
+        "tall": "col-span-4 row-span-2",
+        "square": "col-span-4 row-span-1"
+      }
+    },
+    "containers": {
+      "padding_inner": "p-6 sm:p-8 lg:p-12",
+      "margin_sections": "my-24 lg:my-32"
+    },
+    "border_radius": {
+      "cards": "rounded-2xl",
+      "buttons": "rounded-full",
+      "inputs": "rounded-xl"
+    }
+  },
+  "surfaces_and_effects": {
+    "header": {
+      "style": "Crystal Glass",
+      "classes": "backdrop-blur-xl bg-[#FDFBF7]/70 border-b border-[#2A4736]/10 backdrop-saturate-150 shadow-sm"
+    },
+    "cards": {
+      "default_classes": "bg-white border border-[#2A4736]/10 rounded-2xl p-6 sm:p-8 transition-transform duration-300 ease-out",
+      "hover_classes": "hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(42,71,54,0.08)] hover:border-[#2A4736]/30"
+    },
+    "overlays": {
+      "hero_image": "bg-gradient-to-r from-[#1A251F]/60 via-[#1A251F]/40 to-transparent"
+    }
+  },
+  "components": {
+    "navigation": "Fixed header with crystal glass effect, logo on left, primary links center, CTA on right (Login/Signup).",
+    "hero_section": "Asymmetrical layout. Large H1, dynamic editorial ribbon marquee below for categories (Photography, Catering, Decor).",
+    "vendor_card": "Image focused (aspect-square or 4:3), sharp typography, minimal details overlay. No generic Shadcn cards; use custom divs with hover effects.",
+    "search_bar": "Prominent, pill-shaped (rounded-full) input floating on hero, elevated with soft shadow and heavy padding (py-4 px-6).",
+    "dashboard_layout": "Strict grid hierarchy. Left sidebar for nav (Dashboard, Profile, Settings). Content area bento grid for stats (Vendors: views, leads / Customers: saved vendors, upcoming events).",
+    "forms": "Customized Shadcn forms. Inputs with rounded-xl, light background (#F3EFE9), 1px focus ring using secondary color (#2A4736).",
+    "buttons": "Primary buttons: solid background, rounded-full, distinct hover transition. Secondary buttons: transparent with 1px solid border."
+  },
+  "animation_and_interactions": {
+    "hover": "All interactive elements must change color/background on hover with duration-300 ease-out.",
+    "focus": "focus:ring-2 focus:ring-[#C85A4F]/50 focus:outline-none",
+    "page_load": "Staggered fade-up for grid items (framer-motion).",
+    "scrolling": "Lenis smooth scroll is recommended for premium feel."
+  },
+  "media_assets": {
+    "icons_library": "lucide-react (Standard choice, rounded and elegant)",
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxldmVudCUyMGNlbGVicmF0aW9uJTIwcGVvcGxlfGVufDB8fHx8MTc4MDQ5NjAwMnww&ixlib=rb-4.1.0&q=85",
+        "description": "People raising wine glasses in selective focus - use for main marketplace hero background."
+      },
+      "category_decoration": {
+        "url": "https://images.unsplash.com/photo-1529636798458-92182e662485?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwZGVjb3JhdGlvbiUyMGZsb3JhbHxlbnwwfHx8fDE3ODA0OTU5OTN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Floral arrangement - use for Decoration category or vendor example."
+      },
+      "category_catering": {
+        "url": "https://images.unsplash.com/photo-1576842546422-60562b9242ae?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxldmVudCUyMGNhdGVyaW5nJTIwc2V0dXB8ZW58MHx8fHwxNzgwNDk1OTkzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Catering setup with food displayed - use for Catering category or vendor example."
+      },
+      "category_photography": {
+        "url": "https://images.unsplash.com/photo-1618151193636-acf8bed54982?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxwaG90b2dyYXBoZXIlMjBjYW1lcmElMjBvdXRkb29yfGVufDB8fHx8MTc4MDQ5NTk5M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Photographer outdoor - use for Photography category or vendor example."
+      }
+    }
+  },
+  "testing": {
+    "requirements": "All interactive elements must include data-testid attribute formatted as kebab-case role-based (e.g. data-testid='vendor-search-button')."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. Do not use generic tailwind colors like blue-500 or gray-200. Use the hex codes provided via custom classes or tailwind config.",
+    "Apply generative spacing. Containers should feel roomy.",
+    "For the hero section, use the provided hero_background image with the exact gradient overlay specified.",
+    "Ensure all fonts are imported properly (Cabinet Grotesk and Satoshi via Google Fonts or Fontshare).",
+    "Build the dashboard using a clear sidebar and grid content area with minimal card borders.",
+    "Do NOT use 'Inter' for headings.",
+    "Use standard semantic HTML wrapped with Tailwind, using Shadcn for complex inputs (Select, Forms, Dialogs)."
+  ]
+}
