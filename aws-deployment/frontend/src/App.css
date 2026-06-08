@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,400,300,100,200,900,600&f[]=satoshi@900,700,500,300,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-color: #FDFBF7;
+  color: #1A251F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.glass-header {
+  backdrop-filter: blur(24px);
+  background: rgba(253, 251, 247, 0.7);
+  border-bottom: 1px solid rgba(42, 71, 54, 0.1);
+  backdrop-saturate: 150%;
+}
+
+.btn-primary {
+  background: #C85A4F;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #D86B60;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 90, 79, 0.25);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #2A4736;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  border: 1px solid rgba(42, 71, 54, 0.3);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(42, 71, 54, 0.05);
+  border-color: #2A4736;
+}
+
+.card-hover {
+  transition: all 0.3s ease-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(42, 71, 54, 0.08);
+}
+
+.input-field {
+  background: #F3EFE9;
+  border: 1px solid rgba(42, 71, 54, 0.1);
+  border-radius: 12px;
+  padding: 14px 18px;
+  width: 100%;
+  font-family: 'Satoshi', sans-serif;
+  color: #1A251F;
+  transition: all 0.3s ease-out;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #C85A4F;
+  box-shadow: 0 0 0 3px rgba(200, 90, 79, 0.1);
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, rgba(26, 37, 31, 0.6), rgba(26, 37, 31, 0.4), transparent);
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
