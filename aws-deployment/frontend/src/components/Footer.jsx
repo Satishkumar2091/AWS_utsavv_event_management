@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-4">EventHub</h3>
+            <h3 className="font-heading text-2xl font-bold mb-4">UtsavNex</h3>
             <p className="text-white/80 text-sm">
               Your trusted marketplace for event vendors and services.
             </p>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} EventHub. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} UtsavNex. All rights reserved.</p>
         </div>
       </div>
     </footer>

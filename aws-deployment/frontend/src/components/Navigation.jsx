@@ -29,7 +29,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="font-heading text-2xl font-bold text-textPrimary">
-            EventHub
+            UtsavNex
           </Link>
 
           {/* Desktop Navigation */}
