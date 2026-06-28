@@ -43,15 +43,63 @@ export default function Navigation() {
             >
               Home
             </Link>
-            <Link
-              data-testid={NAVIGATION.eventsLink}
-              to="/events"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/events') ? 'text-terracotta' : 'text-textSecondary hover:text-textPrimary'
-              }`}
-            >
-              Events
-            </Link>
+            <div className="relative group">
+  <button className="text-sm font-medium text-textSecondary hover:text-textPrimary">
+    Categories ▼
+  </button>
+
+  <div className="absolute hidden group-hover:block bg-white shadow-xl rounded-lg mt-3 w-72 border z-50">
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Wedding</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Engagement</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Birthday Party</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Housewarming</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Baby Shower</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Naming Ceremony</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Haldi Ceremony</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Mehendi</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Reception</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Temple Events</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Corporate Events</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">College Fest</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">School Events</Link>
+
+    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Cultural Programs</Link>
+
+  </div>
+</div>
+<Link
+    to="/vendors"
+    className="text-sm font-medium text-textSecondary hover:text-textPrimary"
+>
+    Vendors
+</Link>
+
+<Link
+    to="/about"
+    className="text-sm font-medium text-textSecondary hover:text-textPrimary"
+>
+    About
+</Link>
+
+<Link
+    to="/contact"
+    className="text-sm font-medium text-textSecondary hover:text-textPrimary"
+>
+    Contact
+</Link>
             {isLoggedIn && (
               <Link
                 data-testid={NAVIGATION.dashboardLink}
