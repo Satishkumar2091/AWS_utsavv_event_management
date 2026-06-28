@@ -7,16 +7,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        warmSand: "#FDFBF7",
-        warmSandSecondary: "#F3EFE9",
-        terracotta: "#C85A4F",
-        terracottaHover: "#D86B60",
-        forestGreen: "#2A4736",
-        forestGreenHover: "#365945",
-        textPrimary: "#1A251F",
-        textSecondary: "#4A5650",
-        textMuted: "#8A948E",
-      },
+  warmSand: "#FAF7FF",
+  warmSandSecondary: "#F3EEFC",
+
+  terracotta: "#D4AF37",
+  terracottaHover: "#E6C65C",
+
+  forestGreen: "#5B2C83",
+  forestGreenHover: "#6C3DA0",
+
+  textPrimary: "#2E1A47",
+  textSecondary: "#5F4B7A",
+  textMuted: "#8B7BA8",
+},
       fontFamily: {
         heading: ['Cabinet Grotesk', 'sans-serif'],
         body: ['Satoshi', 'sans-serif'],

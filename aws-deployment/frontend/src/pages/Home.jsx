@@ -38,7 +38,7 @@ export default function Home() {
       {/* Hero Section */}
       <div 
         className="relative h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: `url(https://images.unsplash.com/photo-1527529482837-4698179dc6ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxldmVudCUyMGNlbGVicmF0aW9uJTIwcGVvcGxlfGVufDB8fHx8MTc4MDQ5NjAwMnww&ixlib=rb-4.1.0&q=85)` }}
+        style={{ backgroundImage: `url('/Background_Images/utsavnex_image_website_background.png')` }}
       >
         <div className="hero-gradient absolute inset-0"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">

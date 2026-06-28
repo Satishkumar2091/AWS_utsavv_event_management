@@ -28,79 +28,62 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="font-heading text-2xl font-bold text-textPrimary">
+          <Link to="/" className="font-heading text-3xl font-extrabold text-terracotta tracking-wide">
             UtsavNex
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <Link
-              data-testid={NAVIGATION.homeLink}
-              to="/"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/') ? 'text-terracotta' : 'text-textSecondary hover:text-textPrimary'
-              }`}
-            >
-              Home
-            </Link>
-            <div className="relative group">
-  <button className="text-sm font-medium text-textSecondary hover:text-textPrimary">
-    Categories ▼
-  </button>
-
-  <div className="absolute hidden group-hover:block bg-white shadow-xl rounded-lg mt-3 w-72 border z-50">
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Wedding</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Engagement</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Birthday Party</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Housewarming</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Baby Shower</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Naming Ceremony</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Haldi Ceremony</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Mehendi</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Reception</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Temple Events</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Corporate Events</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">College Fest</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">School Events</Link>
-
-    <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Cultural Programs</Link>
-
-  </div>
-</div>
-<Link
-    to="/vendors"
-    className="text-sm font-medium text-textSecondary hover:text-textPrimary"
+  to="/"
+  className={`text-sm font-semibold ${
+    isActive("/") ? "text-terracotta" : "text-textSecondary hover:text-terracotta"
+  }`}
 >
-    Vendors
+  Home
 </Link>
 
 <Link
-    to="/about"
-    className="text-sm font-medium text-textSecondary hover:text-textPrimary"
+  to="/categories"
+  className="text-sm font-semibold text-textSecondary hover:text-terracotta"
 >
-    About
+  Categories
 </Link>
 
 <Link
-    to="/contact"
-    className="text-sm font-medium text-textSecondary hover:text-textPrimary"
+  to="/vendors"
+  className="text-sm font-semibold text-textSecondary hover:text-terracotta"
 >
-    Contact
+  Vendors
 </Link>
-            {isLoggedIn && (
+
+<Link
+  to="/about"
+  className="text-sm font-semibold text-textSecondary hover:text-terracotta"
+>
+  About Us
+</Link>
+
+<Link
+  to="/contact"
+  className="text-sm font-semibold text-textSecondary hover:text-terracotta"
+>
+  Contact Us
+</Link>
+
+{isLoggedIn && (
+  <Link
+    to="/dashboard"
+    className={`text-sm font-semibold ${
+      isActive("/dashboard")
+        ? "text-terracotta"
+        : "text-textSecondary hover:text-terracotta"
+    }`}
+  >
+    Dashboard
+  </Link>
+)}
+              {isLoggedIn && (
               <Link
                 data-testid={NAVIGATION.dashboardLink}
                 to="/dashboard"
